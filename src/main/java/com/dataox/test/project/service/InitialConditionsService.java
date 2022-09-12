@@ -31,7 +31,7 @@ public class InitialConditionsService {
 
     private static List<Passenger> initPassengersList(int currentFloor, int numberFloors) {
         int numberPassengerOnFloor = new Random().nextInt(MAX_NUMBER_PASSENGERS_ON_FLOOR_AT_START); // from 0 to 9
-        if (currentFloor == 0 || numberPassengerOnFloor == 0) {
+        if (numberPassengerOnFloor == 0) {
             return new ArrayList<>();
         }
         return IntStream.rangeClosed(0, numberPassengerOnFloor)
