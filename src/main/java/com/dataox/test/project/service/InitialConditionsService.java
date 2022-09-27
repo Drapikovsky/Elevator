@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class InitialConditionsService {
-    private static final int MAX_NUMBER_FLOORS = 5;
-    private static final int MIN_NUMBER_FLOORS = 20;
+    private static final int MAX_NUMBER_FLOORS = 20;
+    private static final int MIN_NUMBER_FLOORS = 5;
     private static final int MAX_NUMBER_PASSENGERS_ON_FLOOR_AT_START = 10;
 
     public static Building getBuilding() {
